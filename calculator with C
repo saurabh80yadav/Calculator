@@ -4,3 +4,43 @@
 main()
 {
 clrscr();
+int num1;
+int num2;
+char op;
+int result;
+
+printf("Enter the value of first number:");
+scanf("%d",&num1);
+
+printf("Enter the operation:"):
+scanf(" %c",&op);
+
+printf("Enter the value of second number:");
+scanf("%d",&num2);
+
+switch(op)
+{
+  case '+':
+  result= num1+num2;
+  printf("result :%d+%d=%d",num1,num2,result);
+  break;
+  
+  case '-':
+  result= num1-num2;
+  printf("result :%d-%d=%d",num1,num2,result);
+  break;
+  
+  case '*':
+  result= num1*num2;
+  printf("result :%d*%d=%d",num1,num2,result);
+  break;
+  
+  case '/':
+  result= num1/num2;
+  printf("result :%d/%d=%d",num1,num2,result);
+  break;
+
+}
+getch();
+
+}
